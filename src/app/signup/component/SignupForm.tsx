@@ -35,11 +35,6 @@ const SignupForm = () => {
       toast.error(json.message);
     } else {
       toast.success("Account created successfully, Please Check Your Email for Verification");
-      signIn("credentials", {
-        email,
-        password,
-        callbackUrl: "/signup/verification",
-      });
     }
   };
 

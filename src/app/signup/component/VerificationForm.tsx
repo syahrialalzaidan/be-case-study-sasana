@@ -33,7 +33,7 @@ const VerificationForm = () => {
     }
 
     const res = await fetch("/api/signup/verification", {
-      method: "POST",
+      method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
