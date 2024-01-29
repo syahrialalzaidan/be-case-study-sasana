@@ -30,7 +30,7 @@ const LoginVerifForm = ({ email }: LoginVerifFormProps) => {
     }
 
     const res = await fetch("/api/login/verification", {
-      method: "POST",
+      method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
@@ -39,7 +39,7 @@ const LoginVerifForm = ({ email }: LoginVerifFormProps) => {
 
     const data = await res.json();
     if (res.ok) {
-      toast.success("Account verified");
+      toast.success("Verified, Logged In Succesfully");
       router.push("/");
     } else if (res.status === 406) {
       toast.error(data.message);

@@ -9,7 +9,7 @@ const ForgotForm = () => {
   const handleForgot = async (e: FormEvent) => {
     e.preventDefault();
     const res = await fetch("/api/forgotpassword", {
-      method: "POST",
+      method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email }),
     });

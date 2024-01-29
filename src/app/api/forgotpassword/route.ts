@@ -4,7 +4,7 @@ import crypto from "crypto";
 import { sendForgotPassword } from "@/lib/mailer";
 import { experimental_taintUniqueValue } from "react";
 
-export async function POST(request: NextRequest) {
+export async function PATCH(request: NextRequest) {
   try {
     const { email } = await request.json();
     console.log(experimental_taintUniqueValue)

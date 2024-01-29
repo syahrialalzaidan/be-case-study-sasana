@@ -21,7 +21,7 @@ const NewForm = () => {
     }
 
     const res = await fetch("/api/forgotpassword/new", {
-      method: "POST",
+      method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ token, password }),
     });
