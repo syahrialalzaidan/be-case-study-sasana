@@ -14,8 +14,9 @@ export default async function Page() {
   }
 
   return (
-    <>
+    <div className="bg-blue-200 min-h-screen flex flex-col justify-center items-center">
+      <h1 className="text-4xl text-center font-bold">Dashboard</h1>
       <Dashboard />
-    </>
+    </div>
   );
 }

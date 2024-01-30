@@ -30,7 +30,7 @@ export async function PATCH(request: NextRequest) {
     });
     sendLoginVerification(email, loginOtp);
     return NextResponse.json(
-      { message: "User logged in successfully" },
+      { message: "Login OTP Sent" },
       { status: 200 }
     );
   } catch {

@@ -34,7 +34,7 @@ const LoginVerifForm = ({ email }: LoginVerifFormProps) => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ email }),
+      body: JSON.stringify({ email, otp }),
     });
 
     const data = await res.json();
